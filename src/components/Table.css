@@ -1,0 +1,52 @@
+/* Table.css */
+.table-container {
+    font-family: Arial, sans-serif;
+    max-width: 188px;
+    max-height: 25px;
+    margin: 20px;
+    
+    
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-table tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-table tr:last-child {
+    border-bottom: none;
+}
+
+.menu-table td {
+    color: #333333;
+    padding: 0px 0px 0px 4px;
+}
+
+.menu-table a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: #002A7E;
+    background-color: #D2E6F5; 
+    margin: 1px;
+    padding: 3px 3px 3px 10px; 
+}
+
+.menu-table a:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}

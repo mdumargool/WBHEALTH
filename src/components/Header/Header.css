@@ -1,0 +1,10 @@
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imgDiv{
+    height:"150px";
+    margin-left: 100px;
+    margin-right: 100px;
+}

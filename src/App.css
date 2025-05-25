@@ -1,0 +1,48 @@
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-sidebar {
+  width: 250px;
+  order: 1;
+}
+
+.center-content {
+  flex: 1;
+  order: 2;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.right-sidebar {
+  width: 250px;
+  order: 3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .main-content {
+    flex-wrap: wrap;
+  }
+  
+  .center-content {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .left-sidebar, .right-sidebar {
+    width: 100%;
+  }
+}

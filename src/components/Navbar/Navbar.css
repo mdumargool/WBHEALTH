@@ -1,0 +1,22 @@
+.clockBox{
+    padding: 5px 0px;
+}
+.navlist{
+    padding: 5px 0px;
+    display: flex;
+    margin: 0px 0px 5px ;
+    align-items: center;
+    justify-content: center;
+    background-color: #4866AF;
+    color: white;
+    position: relative;
+}
+li{
+    list-style-type:none;
+    font-weight:bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}

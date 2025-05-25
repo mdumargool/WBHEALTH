@@ -1,0 +1,51 @@
+.right-section h5 {
+  color: #003366;
+  font-weight: bold;
+}
+.right-section.nav{
+    text-align: center;
+    max-height:fit-content;
+    max-width: fit-content;
+}
+.cm-name, p{
+    margin: 0px;
+    color: #333333;
+    text-align: center;
+}
+
+.right-section {
+  background-color: #D2E6F5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.minister-photo {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.menu-link {
+  display: block;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: #D2E6F5;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.menu-link:hover {
+  background-color: #002A7E;
+  color: #FFFF;
+}

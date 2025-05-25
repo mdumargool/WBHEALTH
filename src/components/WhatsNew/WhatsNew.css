@@ -1,0 +1,184 @@
+.whatsapp {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.whats-new-container {
+  width: 100%;
+  margin: auto;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+} 
+
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #21437C;
+  background-color: #C3B618;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 482px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Updated Notice Board Scroll Animation */
+.notice-board {
+  height: 200px; /* Increased height */
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.notice-wrapper {
+  position: absolute;
+  width: 100%;
+  animation: scrollUp 20s linear infinite;
+}
+
+.notice-item {
+  padding: 12px 15px;
+  font-size: 1rem;
+  color: #222;
+  border-bottom: 1px dashed #aaa;
+  background-color: #fff;
+  margin: 2px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Pause on hover and show scrollbar */
+.notice-board:hover .notice-wrapper {
+  animation-play-state: paused;
+  position: relative;
+  transform: none;
+  animation: none;
+}
+
+.notice-board:hover {
+  overflow-y: auto;
+}
+
+/* Scrollbar styling */
+.notice-board::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notice-board::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.notice-board::-webkit-scrollbar-thumb {
+  background: #C3B618;
+  border-radius: 4px;
+}
+
+.notice-board::-webkit-scrollbar-thumb:hover {
+  background: #21437C;
+}
+
+/* Improved Animation */
+@keyframes scrollUp {
+  0%, 10% {
+    transform: translateY(0);
+  }
+  90%, 100% {
+    transform: translateY(calc(-100% + 200px)); /* Adjusted for new height */
+  }
+}
+
+/* Notice Board Section Styles */
+.notice-board-section {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.notice-board-header {
+  background-color: #21437C;
+  padding: 10px 15px;
+}
+
+.notice-board-categories {
+  display: flex;
+  gap: 15px;
+}
+
+.notice-board-categories span {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.notice-board-categories span:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.notice-board-categories span.active {
+  background-color: #C3B618;
+  color: #21437C;
+}
+
+.notice-board-items {
+  padding: 15px;
+  background-color: #f8f9fa;
+  min-height: 200px;
+}
+
+.notice-board-item {
+  padding: 10px 0;
+  font-size: 0.95rem;
+  color: #222;
+  border-bottom: 1px dashed #aaa;
+}
+
+.notice-board-item:last-child {
+  border-bottom: none;
+}
+
+.menu-table td {
+  padding: 3px 3px 3px 10px;
+  margin: 1px;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #D2E6F5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .notice-board-categories {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .notice-board-categories span {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .notice-board-items {
+    padding: 10px;
+  }
+}
