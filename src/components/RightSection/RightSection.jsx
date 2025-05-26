@@ -19,7 +19,7 @@ const RightSection = () => {
     ];
     return (
         <div className="right-section">
-            {/* /* Minister Photo */}
+            {/* Chief Minister Photo */}
             <div className='nav'>
                 <img
                     src="https://www.wbhealth.gov.in/uploaded_images/M1.jpg"
@@ -27,11 +27,12 @@ const RightSection = () => {
                     className="img-fluid mb-3"
                     style={{ border: "1px solid #ccc", borderRadius: "5px" }}
                 />
-                <p className='cm-name'>
-                    <strong>Mamata Banerjee</strong>
+                <div className='cm-name'>
+                    <p><strong>Mamata Banerjee</strong></p>
                     <p>Chief Minister &</p>
                     <p>Minister Incharge</p>
-                </p>
+                </div>
+
             </div>
             {/* Section List */}
             <table className="right-menu">
@@ -52,8 +53,6 @@ const RightSection = () => {
                     ))}
                 </tbody>
             </table>
-
-
         </div>
     );
 };

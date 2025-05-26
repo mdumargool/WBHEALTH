@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import MainMenu from './components/MainMenu/MainMenu';
-import WhatsNew from './components/WhatsNew/WhatsNew';
+import MainMenu from './components/LeftSection/LeftSection';
+import WhatsNew from './components/MidSection/MidSection';
 import RightSection from './components/RightSection/RightSection';
 import './App.css';
 import Footer from './components/Footer/Footer';
@@ -24,7 +24,7 @@ const App = () => {
           <WhatsNew />
         </div>
         
-        {/* Right Sidebar (can be used for other content) */}
+        {/* Right Sidebar  */}
         <div className="right-sidebar">
           <RightSection />
         </div>

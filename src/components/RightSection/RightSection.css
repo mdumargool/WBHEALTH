@@ -2,15 +2,15 @@
   color: #003366;
   font-weight: bold;
 }
-.right-section.nav{
-    text-align: center;
-    max-height:fit-content;
-    max-width: fit-content;
+.right-section.nav {
+  text-align: center;
+  max-height: fit-content;
+  max-width: fit-content;
 }
-.cm-name, p{
-    margin: 0px;
-    color: #333333;
-    text-align: center;
+.cm-name, p {
+  margin: 0px;
+  color: #333333;
+  text-align: center;
 }
 
 .right-section {
@@ -42,10 +42,33 @@
   padding: 8px 12px;
   background-color: #D2E6F5;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .menu-link:hover {
   background-color: #002A7E;
   color: #FFFF;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .right-section {
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .right-menu {
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .menu-link {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .right-section.nav {
+    max-width: 100%;
+    text-align: center;
+  }
 }

@@ -1,6 +1,3 @@
-        
-        
-        
 import React, { useEffect, useState } from 'react';
 import './ImageSlider.css';
 
@@ -20,9 +17,9 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % images.length);
-    }, 2000); // 2 seconds delay
+    }, 2000); 
 
-    return () => clearInterval(interval); // cleanup
+    return () => clearInterval(interval); 
   }, []);
 
   return (

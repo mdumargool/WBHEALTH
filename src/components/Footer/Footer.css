@@ -26,7 +26,7 @@
   font-size: 14px;
   text-transform: uppercase;
   padding: 0 5px;
-   margin-top: 20px;
+  margin-top: 20px;
 }
 
 .footer-links a:hover {
@@ -73,4 +73,29 @@
 }
 .footer{
     background-color: #4866AF;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
 }

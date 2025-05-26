@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './WhatsNew.css';
+import './MidSection.css';
 import ImageSlider from '../ImageSlider/ImageSlider';
 
-const WhatsNew = () => {
+const MidSection = () => {
     const [activeTab, setActiveTab] = useState('NOTICE');
     
     const notices = [
@@ -124,4 +124,4 @@ const WhatsNew = () => {
     );
 };
 
-export default WhatsNew;
+export default MidSection;

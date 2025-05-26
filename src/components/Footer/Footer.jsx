@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-// Import social media icons (you can use react-icons or your own image files)
 
 const Footer = () => {
     return (

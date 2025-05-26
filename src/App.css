@@ -21,7 +21,7 @@
 .center-content {
   flex: 1;
   order: 2;
-  max-width: 800px; /* Adjust as needed */
+  max-width: 800px; 
   margin: 0 auto;
 }
 

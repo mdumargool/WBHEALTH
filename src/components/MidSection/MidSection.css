@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .whats-new-container {
@@ -12,7 +13,8 @@
   padding: 10px;
   border: 1px solid #ccc;
   margin-bottom: 20px;
-} 
+  box-sizing: border-box;
+}
 
 .section-title {
   text-align: center;
@@ -31,9 +33,9 @@
   margin-right: auto;
 }
 
-/* Updated Notice Board Scroll Animation */
+/* Updated Notice Board*/
 .notice-board {
-  height: 200px; /* Increased height */
+  height: 200px;
   overflow: hidden;
   position: relative;
   background-color: #f8f9fa;
@@ -58,7 +60,7 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Pause on hover and show scrollbar */
+/* hover */
 .notice-board:hover .notice-wrapper {
   animation-play-state: paused;
   position: relative;
@@ -89,13 +91,12 @@
   background: #21437C;
 }
 
-/* Improved Animation */
 @keyframes scrollUp {
   0%, 10% {
     transform: translateY(0);
   }
   90%, 100% {
-    transform: translateY(calc(-100% + 200px)); /* Adjusted for new height */
+    transform: translateY(calc(-100% + 200px));
   }
 }
 
@@ -106,6 +107,7 @@
   border-radius: 5px;
   overflow: hidden;
   margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .notice-board-header {
@@ -116,6 +118,7 @@
 .notice-board-categories {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .notice-board-categories span {
@@ -161,16 +164,24 @@
   background-color: #D2E6F5;
 }
 
-/* Responsive Design */
+.notice-board-categories::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .section-title {
     width: 100%;
     font-size: 1.2rem;
+    height: auto;
+    padding: 8px;
   }
 
   .notice-board-categories {
     flex-wrap: wrap;
     gap: 8px;
+    justify-content: center;
   }
 
   .notice-board-categories span {
@@ -180,5 +191,23 @@
 
   .notice-board-items {
     padding: 10px;
+  }
+
+  .notice-wrapper {
+    animation: none;
+    position: relative;
+  }
+
+  .notice-board {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .whatsapp,
+  .whats-new-container,
+  .notice-board-section {
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 }

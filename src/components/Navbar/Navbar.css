@@ -1,22 +1,46 @@
-.clockBox{
-    padding: 5px 0px;
+.navlist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b5998;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
 }
-.navlist{
-    padding: 5px 0px;
-    display: flex;
-    margin: 0px 0px 5px ;
-    align-items: center;
-    justify-content: center;
-    background-color: #4866AF;
-    color: white;
-    position: relative;
+
+.navlist li {
+  margin: 0 8px;
 }
-li{
-    list-style-type:none;
-    font-weight:bold;
+
+.navlist a {
+  color: white;
+  text-decoration: none;
 }
-a{
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
+
+.navlist a:hover {
+  color: black;
+}
+
+.clockBox {
+  white-space: nowrap;
+}
+
+.vertical-bar {
+  color: rgba(0, 0, 0, 0.467);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navlist {
+    flex-direction: column;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .navlist li {
+    margin: 6px 0;
+  }
 }

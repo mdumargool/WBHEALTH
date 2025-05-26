@@ -1,0 +1,157 @@
+/* Main Container */
+.main-container {
+  width: 250px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+/* Menu Section (No Scroll) */
+.menu-container {
+  background-color: #D2E6F5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-table tr {
+  transition: background-color 0.2s;
+  background-color: #D2E6F5;
+}
+
+.menu-table tr:hover {
+  background-color: #B8D4EB;
+}
+
+.menu-table td {
+  padding: 5px 5px 5px 10px;
+  border-bottom: 1px solid #B8C7D9;
+}
+
+.menu-table tr:last-child td {
+  border-bottom: none;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #002A7E;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.menu-link:hover {
+  color: #001A4E;
+}
+
+.menu-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+/* E-Governance Section (With Scrollbar) */
+.e-governance-section {
+  margin-top: 15px;
+}
+
+.e-gov-box {
+  background-color: #D2E6F5;
+  border: 1px solid #B8C7D9;
+  border-radius: 4px;
+  max-height: 200px; /* Fixed height for scroll */
+  overflow-y: auto;   /* Enables vertical scrollbar */
+}
+
+.e-governance-header {
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 8px 10px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.e-gov-scroll {
+  padding: 5px 0;
+}
+
+.e-governance-link {
+  display: block;
+  text-decoration: none;
+  color: #002A7E;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 5px 15px;
+  line-height: 1.4;
+}
+
+.e-governance-link:hover {
+  text-decoration: underline;
+  color: #F28C00;
+}
+
+/* Custom Scrollbar Styling */
+.e-gov-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.e-gov-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.e-gov-box::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.e-gov-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .main-container {
+    width: 100%;
+  }
+
+  .menu-container {
+    padding: 8px;
+  }
+
+  .menu-link {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .e-gov-box {
+    max-height: 150px;
+  }
+
+  .e-governance-header {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .e-governance-link {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
